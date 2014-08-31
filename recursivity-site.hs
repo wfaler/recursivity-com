@@ -231,7 +231,7 @@ feedConfiguration title = FeedConfiguration
                           { feedTitle       = "Recursivity blog - " ++ title
                           , feedDescription = ""
                           , feedAuthorName  = "Wille Faler"
-                          , feedAuthorEmail = "hello@recursivity.com"
+                          , feedAuthorEmail = "mail@recursivity.com"
                           , feedRoot        = "https://recursivity.com/blog"
                           }
 
