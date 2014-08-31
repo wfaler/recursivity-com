@@ -1,5 +1,5 @@
 ---
-title: Relaunch of the Recursivity.com blog & website
+title: Relaunch of the Recursivity website
 tags: haskell, hakyll
 description: Foo bar
 ---
