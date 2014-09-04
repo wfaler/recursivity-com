@@ -19,6 +19,10 @@ main = hakyllWith config $ do
     route   idRoute
     compile copyFileCompiler
 
+  match "fonts/*" $ do
+    route   idRoute
+    compile copyFileCompiler
+
   match "css/*" $ do
     route $ setExtension "css"
     compile copyFileCompiler
@@ -45,6 +49,7 @@ main = hakyllWith config $ do
   match "contact.markdown" $ do
     route niceRoute
     compile $ pandocCompiler
+      >>= loadAndApplyTemplate "templates/narrow.html" defaultContext
       >>= loadAndApplyTemplate "templates/default.html" defaultContext
       >>= relativizeUrls
       >>= removeIndexHtml
