@@ -294,10 +294,14 @@ header nav ul li a:hover{
 .video a{
 	color: Black;
 	text-decoration: none;
-	font-family: 'open_regular', arial;
-	font-size: 16px;
-	font-weight: normal;
 } 
+
+.video a:hover {
+    text-decoration: underline;
+}
+.video a:active {
+    text-decoration: underline;
+}
 
 .video .ex_video{
 	margin-bottom: -3px;
