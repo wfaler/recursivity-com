@@ -34,6 +34,7 @@ main = hakyllWith config $ do
   match "notes/*" $ do
     route noteRoute
     compile $ pandocCompilerWith defaultHakyllReaderOptions pandocTocWriter
+      >>= loadAndApplyTemplate "templates/post.html" defaultContext
       >>= loadAndApplyTemplate "templates/default.html" defaultContext
       >>= relativizeUrls
       >>= removeIndexHtml
