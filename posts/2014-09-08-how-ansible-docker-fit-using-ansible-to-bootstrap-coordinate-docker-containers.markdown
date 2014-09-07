@@ -6,7 +6,7 @@ description: A brief exploration of how Ansible and Docker could potentially fit
 There are a lot of exciting tools in the infrastructure &amp; virtualisation space that have emerged in the last couple of years. [Ansible](http://www.ansible.com/home) &amp; [Docker](https://www.docker.com/) are probably two of the most exciting ones in my opinion. While I've already used Ansible extensively, I've only started to use Docker, so that's the big caveat emptor with regards to the contents of this post.
 
 ### What's Docker &amp; why should I care?
-Docker describes itself as a _"container"_, which at a first glance can be easily confused with a VM. [Wikipedia](http://en.wikipedia.org/wiki/Docker_%28software%29) describes Docker containers in the following way:
+Docker describes itself as a _"container platform"_, which at a first glance can be easily confused with a VM. [Wikipedia](http://en.wikipedia.org/wiki/Docker_%28software%29) describes Docker containers in the following way:
 
     Docker uses resource isolation features of the Linux kernel such as cgroups and kernel namespaces to allow independent "containers" to run within a single Linux instance, avoiding the overhead of starting virtual machines.
 

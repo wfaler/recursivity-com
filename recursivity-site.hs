@@ -44,22 +44,6 @@ main = hakyllWith config $ do
       >>= relativizeUrls
       >>= removeIndexHtml
 
-  match "about.markdown" $ do
-    route niceRoute
-    compile $ pandocCompiler
-      >>= loadAndApplyTemplate "templates/narrow.html" defaultContext
-      >>= loadAndApplyTemplate "templates/default.html" defaultContext
-      >>= relativizeUrls
-      >>= removeIndexHtml
-
-  match "contact.markdown" $ do
-    route niceRoute
-    compile $ pandocCompiler
-      >>= loadAndApplyTemplate "templates/narrow.html" defaultContext
-      >>= loadAndApplyTemplate "templates/default.html" defaultContext
-      >>= relativizeUrls
-      >>= removeIndexHtml
-
   match "index.html" $ do
     route idRoute
     compile $ pandocCompiler
