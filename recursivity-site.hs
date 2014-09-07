@@ -15,7 +15,11 @@ main = hakyllWith config $ do
     route idRoute
     compile copyFileCompiler
   
-  match "img/*" $ do
+  match "img/**" $ do
+    route   idRoute
+    compile copyFileCompiler
+
+  match "font-awesome-4.1.0/**" $ do
     route   idRoute
     compile copyFileCompiler
 
@@ -23,12 +27,13 @@ main = hakyllWith config $ do
     route   idRoute
     compile copyFileCompiler
 
-  match "css/*" $ do
-    route $ setExtension "css"
+  match "css/**" $ do
+    route   idRoute
     compile copyFileCompiler
 
-  match "js/*" $ do
-    route $ setExtension "js"
+
+  match "js/**" $ do
+    route   idRoute
     compile copyFileCompiler
 
   match "notes/*" $ do

@@ -1,46 +1,45 @@
-
-  <section class="video wrapper">
-  $if(date)$ 
-  <p><a href="/blog">&lt; back to blog index</a></p><br/><br/>
-  $endif$
-    <h1>$title$</h1>
-    <p>
-       $if(date)$ 
-            <span class="post-date">$date$</span>
-       $endif$
-       $if(tags)$ 
-        in 
-        <span class="post-tags">$tags$</span>
+<section id="about" class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        $if(date)$ 
+        <p class="lead"><a href="/blog">&lt; back to blog index</a></p><br/><br/>
         $endif$
-    </p>
-    <p>$body$</p>
-  <p>
-  </section>
-  <section class="subscription">
-    <div class="wrapper">
-      <p class="title">join our subscribers</p>
-      <a href="#" class="start_btn">Click here to subscribe</a>
+        <h2 class="text-center">$title$</h2>
+        <p class="lead">
+        <p class="text-center">
+          $if(date)$ 
+          <span class="post-date">$date$</span>
+          $endif$
+          $if(tags)$ 
+          in 
+          <span class="post-tags">$tags$</span>
+          $endif$
+        </p>
+        
+        $body$
+          <div>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+              /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+              var disqus_shortname = 'recursivity'; // required: replace example with your forum shortname
+              
+              /* * * DON'T EDIT BELOW THIS LINE * * */
+              (function() {
+              var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+              dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+              })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+          </div>
+      </p>
+      </div>
     </div>
-  </section><!-- End subscription -->
+    <!-- /.row -->
+  </div>
+<!-- /.container -->
+</section>
 
-  <section class="video wrapper">
-    <div id="disqus_thread"></div>
-<script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'recursivity'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-</div>
-</p>
-  </section>  <!-- End video -->
-
-<!--End mc_embed_signup-->
 
