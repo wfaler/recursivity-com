@@ -1,0 +1,27 @@
+#optin { background: #fff url(/img/shadow.png) repeat-x top; border: 3px solid #efefef; padding: 20px 15px; text-align: center }
+#optin input {
+    border: 1px solid #ccc;
+    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    box-shadow: 0 2px 2px #ddd;
+    -moz-box-shadow: 0 2px 2px #ddd;
+    -webkit-box-shadow: 0 2px 2px #ddd
+}
+#optin input.email { background: #fff url(/img/email.png) no-repeat 10px center; padding-left: 35px }
+#optin input.name { background: #fff url(/img/name.png) no-repeat 10px center; padding-left: 35px }
+#optin input[type="submit"] {
+    background: #f6640e url(/img/orange.png) repeat-x top;
+    border: 1px solid #a44913;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0;
+    text-shadow: -1px -1px #562806;
+    width: 100%
+}
+#optin input[type="submit"]:hover { color: #ffdeb3 }
