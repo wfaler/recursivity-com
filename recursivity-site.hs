@@ -243,7 +243,7 @@ feedConfiguration title = FeedConfiguration
                           , feedDescription = ""
                           , feedAuthorName  = "Wille Faler"
                           , feedAuthorEmail = "mail@recursivity.com"
-                          , feedRoot        = "https://recursivity.com/blog"
+                          , feedRoot        = "https://recursivity.com"
                           }
 
 --------------------------------------------------------------------------------

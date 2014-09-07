@@ -1,7 +1,7 @@
 ---
 title: Relaunch of the Recursivity website
 tags: haskell, hakyll
-description: Foo bar
+description: This website is being relaunched, and is now generated with Hakyll
 ---
 
 This site & blog hasn't received a lot of love recently. As a consequence, I'm rebooting it altogether. The design is the change (though might change over time), but how it is made has changed entirely.
