@@ -234,5 +234,3 @@ feedConfiguration title = FeedConfiguration
 -- | Deployment
 config :: Configuration
 config = defaultConfiguration
-
-
