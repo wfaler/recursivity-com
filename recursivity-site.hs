@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-{-# LANGUAGE OverloadedStrings #-}
+{-# LANGUAGE OverloadedStrings,FlexibleContexts #-}
 import Hakyll
 import Data.Monoid ((<>), mconcat, mappend)
 import Data.List (isInfixOf)
